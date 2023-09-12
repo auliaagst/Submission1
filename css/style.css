@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: #F1F0E8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #96B6C5;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-top: 80px;
+}
+
+header p {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+nav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a{
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.3s;
+}
+
+nav li a:hover {
+    color: #ADC4CE;
+    cursor: pointer;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 80px auto;
+    background-color: #EEE0C9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.content {
+    flex: 2;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.profil {
+    margin-bottom: 100px;
+}
+
+.pendidikan {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pengalaman {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ADC4CE;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.kontak {
+    background-color: #EEE0C9;
+    padding: 20px;
+}
+
+
+.kontak img {
+    width: 300px;
+}
+
+.kontak h2 {
+    font-size: 24px;
+}
+
+.kontak table {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #96B6C5;
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .content, aside {
+        flex: 1;
+        margin-right: 0;
+    }
+}
